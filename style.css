@@ -68,10 +68,11 @@ body{
   .content{
     display:grid;
     grid-template: repeat(6,1fr);
-    grid-gap:10px;
     grid-auto-rows: minmax(120px, max-content);
-    margin:0% 8%;
+    margin: auto;
     margin-top: 100px;
+    grid-gap:25px;
+    
   }
   .content > div {
     padding:5px;
@@ -159,7 +160,7 @@ body{
     margin: auto;
     border-radius: 10px;
     }
-  #cover{
+  .cover{
     background-image: url('./resources/img.jpg');
     height:100%;
     width: 100%;
@@ -190,8 +191,8 @@ body{
 .footer{
   display: flex;
   background: #212121;
-  height:150px;
-  margin:-5px;
+  height:atuo;
+  margin-top:50px;
   color:white;
   font-family: 'Roboto', sans-serif;
   justify-content: space-evenly;
@@ -213,25 +214,24 @@ body{
   cursor: pointer;
 }
 
-
+/* Cover info */
+.alt-pages{
+  margin-bottom:100px; 
+}
+.margin{
+  margin-bottom: 10px;
+}
 
 /* Careers Page */
 #career{
   background-image: url('./resources/careers.jpg');
-  height:100%;
-  width: 100%;
-  margin: auto;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  
 }
 
-#career-info{
+.info{
   background: #fff;
-  height:50%;
+  height:100%;
   width: 100%;
-  margin: 50px 0px 500px 0px;
+  margin: 50px 50px ;
   border-radius: 10px;
   background-size: cover;
   background-position: center;
@@ -244,26 +244,6 @@ body{
 
 #about{
   background-image: url('./resources/team.jpg');
-  height:100%;
-  width: 100%;
-  margin: auto;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  
-}
-
-#about-info{
-  background: #fff;
-  height:50%;
-  width: 100%;
-  margin: 50px 0px 500px 0px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  grid-area: 4/1/span 2/span 5;
-  text-align: center;
-  padding-top:50px;
 }
 
 
@@ -271,26 +251,7 @@ body{
 
 #partner{
   background-image: url('./resources/partner.jpg');
-  height:100%;
-  width: 100%;
-  margin: auto;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
   
-}
-
-#partner-info{
-  background: #fff;
-  height:50%;
-  width: 100%;
-  margin: 50px 0px 500px 0px;
-  border-radius: 10px;
-  background-size: cover;
-  background-position: center;
-  grid-area: 4/1/span 2/span 5;
-  text-align: center;
-  padding-top:50px;
 }
 
 .btn{
@@ -306,3 +267,95 @@ body{
 .btn:hover{
   cursor: pointer;
 }
+
+
+/* MEDIA QUERIES FOR <900px */
+@media (max-width:900px){
+  /* body{
+    background: black;
+  } */
+  .nav{
+    flex-wrap: wrap;
+  }
+  .nav > div:first-child{
+    display: none;
+  }
+  .footer{
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+    /* Content Grid */
+    .content{
+      grid-template: repeat(4,1fr);
+      grid-gap: 15px;
+      
+    }
+    .content > div:nth-child(1){
+      margin: auto;
+      width: 80%;
+      grid-area: 1 / 1 / 4 / 6;
+    }
+    div.left-bar{
+      grid-area: 4 / 1 / span 2 / span 1;
+      
+    }
+
+    div.left-bar div{
+      font-size: 12px;
+      padding-left: 5px;
+      margin:15px 5px;
+    }
+    .content > div:nth-child(n+4){
+      width: 80%;
+      margin-top: 25px;
+      grid-column: span 2;
+      margin:auto;
+      
+    }
+
+}
+
+
+
+
+/* MEDIA QUERIES FOR <700px */
+@media (max-width:760px){
+  /* body{
+    background: blue;
+  } */
+  #search{
+    display: none;
+    flex:0.1;
+  }
+  #sbar-items{
+    display: none
+  }
+  div.left-bar{
+    display: none;
+    
+  }
+}
+
+
+/* MEDIA QUERIES FOR <500px */
+@media (max-width:500px){
+  /* body{
+    background: red;
+  } */
+  .nav{
+    flex-wrap: wrap;
+  }
+
+
+  .content > div:nth-child(n+4){
+    text-align: center;
+    margin-top: 25px;
+    grid-column: span 4;
+    
+    
+  }
+
+
+
+}
+
