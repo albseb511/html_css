@@ -1,4 +1,6 @@
 # Website: honeyPot
+![Landing Page](https://i.imgur.com/4L8Qx63.png)
+
 
 ## What is honeyPot?
 ```
