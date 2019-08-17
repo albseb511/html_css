@@ -2,12 +2,15 @@
 
 ## What is honeyPot?
 ```
-At honeyPot we focus on bringing you the Fresh Organic Honey farmed by environmentally sustainable methods with no added preservatives
+At honeyPot we focus on bringing you the Fresh Organic Honey farmed by 
+environmentally sustainable methods with no added preservatives
 ```
 
 ## What is this for?
 ```
-HTML and CSS has evolved over the years, and the website is to showcase the power of combining Grids, Flex, Combinators and Selectors along with Media Queries to build responsive websites
+HTML and CSS has evolved over the years, and the website is to showcase 
+the power of combining Grids, Flex, Combinators and Selectors along with 
+Media Queries to build responsive websites
 ```
 
 ## Tech
